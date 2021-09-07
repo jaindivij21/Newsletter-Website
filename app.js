@@ -47,7 +47,7 @@ app.post('/', (req, res) => {
     const jsonData = JSON.stringify(data);
 
     // make a send request to mail chimp (not same as get request)
-    const api_key = `92358fd37cc583c209c5bc5c67e53611-us5`;
+    const api_key = `#api#`;
     const server = `us5`
     const list_id = `8fbaa62d02`
     const url = `https://${server}.api.mailchimp.com/3.0/lists/${list_id}`; // got all these from mail chimp
@@ -55,7 +55,7 @@ app.post('/', (req, res) => {
     // options for https request
     const options = {
         method: "POST",
-        auth: "jaindivij_:92358fd37cc583c209c5bc5c67e53611-us5"
+        auth: "jaindivij_:#api#"
     }
 
     // to send the jsonData, according to the https (nodeJS) documentation, we need to save the https req in a const
