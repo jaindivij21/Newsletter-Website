@@ -9,7 +9,7 @@ const https = require("https");
 // app declare and extras to read from a post request and use static files
 const app = express();
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static("public")); // to serve static files such am images, css files etc to express. 
 
 
 // MAIN
